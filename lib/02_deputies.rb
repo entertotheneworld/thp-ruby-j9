@@ -48,5 +48,3 @@ def perform_deputies
     
     return deputies_nameS_urlS
 end
-
-puts perform_deputies
