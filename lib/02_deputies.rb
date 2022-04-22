@@ -11,7 +11,7 @@ def get_deputies_urls
     deputies_urlS_xpath.each {|link|
         deputies_urlS << "https://www2.assemblee-nationale.fr" + link["href"]
     }
-
+    5.downto(0) {|i|deputies_urlS.delete_at(i)}
     return deputies_urlS
 end
 
@@ -40,7 +40,9 @@ end
 # Retourne le résultat attendue => Array of Hash
 def perform_deputies
     deputies_nameS_urlS = []
+    
     get_deputies_urls.each{ |deputies_url|
+
         deputies_nameS_urlS << get_deputies_email(deputies_url)
     }
     
