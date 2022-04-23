@@ -1,4 +1,4 @@
-# THP JOUR 9
+# SCRAPPER
 
 
 ## 1. Download the source code
@@ -6,6 +6,7 @@
 $ git clone https://github.com/entertotheneworld/thp-j9
 $ cd ruby_j9
 ```
+
 
 ## 2. Install Gem
 ```ruby
@@ -16,10 +17,9 @@ $ rspec --init
 To verify the installation you must have a Gemfile.lock file in the ruby_j9 folder.
 ⚠️ COMMON ERROR : Check that your version of ruby ​​matches the one saved in the gem file.
 
-## 3. Testing
+
+## 3. Usage
 ```ruby
 $ cd lib
 $ ruby app.rb
 ```
-
-## 4. Enjoy
